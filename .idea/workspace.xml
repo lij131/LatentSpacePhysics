@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a5715a58-c826-4200-90cc-26a6a4e2827a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1eONw3i2feI0dDBHms7qjManKhp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ResNet-Tensorflow-master" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a5715a58-c826-4200-90cc-26a6a4e2827a" name="Default Changelist" comment="" />
+      <created>1594188915019</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594188915019</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="423" y="203" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594892141069">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="423" y="203" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1594892141069" />
+    <state x="499" y="113" key="FileChooserDialogImpl" timestamp="1595840879477">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="113" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595840879477" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1594522154985">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594522154985" />
+    <state x="347" y="0" width="840" height="822" key="search.everywhere.popup" timestamp="1595775915502">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="347" y="0" width="840" height="822" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595775915502" />
+  </component>
+</project>
