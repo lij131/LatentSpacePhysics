@@ -110,7 +110,9 @@ def parse_parameter_search():
     general.add_argument("--datasets_root", type=str, help="Optional path for the dataset. Usefull if dataset is on other disk")
     general.add_argument("--dataset", required=True, help="The name of the dataset to load")
     general.add_argument("--chunk_size", type=int, default=0, help="The number of files loaded as chunk from the dataset")
-   
+    # ResNet
+    resnet = parser.add_argument_group("ResNet")
+    resnet.add_argument()
 
 
 
