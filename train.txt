@@ -1,0 +1,1 @@
+python train_total.py --name total_2D_liquid64 --dataset 2D_liquid64  --ae_epochs 0 --ae_pretrainepochs 0 --lstm_epochs 0 --chunk_size 20 --ae_evaluate --ae_loss mse

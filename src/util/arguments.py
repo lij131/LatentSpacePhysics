@@ -30,6 +30,17 @@ def parse():
     general.add_argument("--dataset", required=True, help="The name or path of the dataset to load")
     general.add_argument("--chunk_size", type=int, default=0, help="The number of files loaded as chunk from the dataset")
     general.add_argument("--norm_desc", type=str, help="Optional path to a normalization description, similar to an AE description.")
+    # ResNet
+    res_arg = parser.add_argument_group('Resnet')
+    res_arg.add_argument('--phase', type=str, default='train', help='train or test ?')
+    # res_arg.add_argument('--dataset', type=str, default='tiny', help='[cifar10, cifar100, mnist, fashion-mnist, tiny')
+    res_arg.add_argument('--res_epochs', type=int, default=82, help='The number of epochs to run')
+    #res_arg.add_argument('--batch_size', type=int, default=256, help='The size of batch per gpu')
+    #残差网络深度选择
+    res_arg.add_argument('--res_n', type=int, default=18, help='18, 34, 50, 101, 152')
+    #res_arg.add_argument('--lr', type=float, default=0.1, help='learning rate')
+    res_arg.add_argument('--checkpoint_dir', type=str, default='checkpoint', help='Directory name to save the checkpoints')
+    res_arg.add_argument('--log_dir', type=str, default='logs', help='Directory name to save training logs')
     # Autoencoder
     autoencoder = parser.add_argument_group("Autoencoder")
     autoencoder.add_argument("--ae_load", type=str, help="name of the project from which to load the autoencoder")

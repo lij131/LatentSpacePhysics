@@ -21,9 +21,13 @@
 
 # check and install requirements
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
+
+from src.nn.arch.autoencoder import ResNet
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 import util.requirements
+#程序安装一些包
 util.requirements.fulfill()
 util.requirements.init_packages()
 
@@ -34,6 +38,7 @@ import numpy as np
 import tensorflow as tf
 
 from nn.arch.autoencoder import Autoencoder, Autoencoder2D
+from nn.arch.resutils import *
 from nn.arch.lstm import Lstm
 from nn.lstm.error_classification import restructure_encoder_data
 from nn.lstm.sequence_training_data import TrainingData, TrainingDataType
@@ -72,7 +77,7 @@ data_fs = Filesystem(datasets_root + "/" + args.dataset + "/")
 def main():
     autoencoder = None
     autoencoder_desc = None
-
+    resnet = None
     #----------------------------------------------------------------------------
     #这句是在训练已经完成，生成了description_autoencoder文件之后。
     #这个description_autoencoder文件和settings.json一模一样
@@ -99,6 +104,14 @@ def main():
     dataset.test.next_chunk()
     dataset.train.next_chunk()
     dataset.val.next_chunk()
+
+    # Resnet
+    if args.res_epochs > 0 :
+        if dataset.description["dimension"] == 2:
+            resnet = ResNet()
+
+
+
 
     # Autoencoder
     #----------------------------------------------------------------------------

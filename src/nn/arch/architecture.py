@@ -18,7 +18,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 #******************************************************************************
-
+#Abstract Base Classes abc是抽象基类
 from abc import ABC, abstractmethod
 #from ...util import requirements
 import inspect

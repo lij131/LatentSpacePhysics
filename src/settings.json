@@ -12,6 +12,10 @@
         "pressure_encoded_total_gas_normalization_factor": 2.9,
         "pressure_density_encoded_gas_normalization_factor": 3.3
     },
+    "resnet": {
+        "batch_size": 256,
+        "learning_rate": 0.1
+    },
     "ae": {
         "batch_size": 4,
         "code_layer_size": 2048,
